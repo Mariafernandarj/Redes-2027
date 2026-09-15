@@ -1,0 +1,21 @@
+# Practica 1 - Bit Flip
+
+## Compilación
+
+Desde la carpeta `practica1`, ejecutar el siguiente comando:
+
+```bash
+gcc flip_bit.c -o flip_bit
+```
+
+## Ejecución
+
+Después de compilar el programa, ejecutar:
+
+```bash
+./flip_bit
+```
+
+# ¿Que es el fenome Bit-Flip que sucede muy comunmente en la capa 1?
+
+El fenómeno Bit-Flip es una alteración que ocurre cuando un bit transmitido cambia accidentalmente de valor (un 0 se convierte en 1 o un 1 en 0). En la capa física  puede ser provocado por ruido, interferencias electromagnéticas, problemas en el medio de transmisión o pérdidas de señal. Esto puede ocasionar que los datos recibidos sean diferentes a los datos enviados.
