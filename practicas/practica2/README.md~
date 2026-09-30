@@ -1,0 +1,64 @@
+# Practica 2 - Capa 2
+
+## Compilación
+
+Desde la carpeta `practica2`, ejecutar el siguiente comando:
+
+```bash
+gcc receptor.c -o receptor
+```
+
+```bash
+gcc emisor.c -o emisor 
+```
+
+## Ejecución
+
+Después de compilar el programa, ejecutar:
+
+Terminal 1
+```bash
+sudo ./receptor 'interfaz'
+```
+
+Ejemplo
+```bash
+sudo ./receptor eth0
+```
+
+Terminal 2
+```bash
+sudo ./emisor 'interfaz' ff:ff:ff:ff:ff:ff "Hola capa 2"
+```
+
+Ejemplo
+```bash
+sudo ./emisor eth0 ff:ff:ff:ff:ff:ff "Hola capa 2"
+```
+
+Para saber que interfaz usar, ejecuta:
+```bash
+ip link
+```
+
+Resultado esperado:
+```
+2: enp2s0: <BROADCAST,MULTICAST,UP,LOWER_UP> ...
+```
+
+## Investigación
+# pcap_open_live
+Permite abrir una interfaz de red para comenzar a capturar paquetes
+
+# pcap_sendpacket
+Envía un paquete de datos directamente a través de la interfaz de red abierta
+
+# pcap_loop
+Ejecuta una función de procesamiento cada vez que se captura un paquete.
+Puede continuar indefinidamente o hasta alcanzar un número determinado de paquetes
+
+# cap_close
+Libera los recursos asociados con una captura abierta mediante pcap_open_live()
+
+# pcap_geterr
+Devuelve un mensaje describiendo el último error asociado con una operación de libpcap
