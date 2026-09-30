@@ -25,7 +25,7 @@ void imprimir_solo_bits(const char *palabra) {
     printf("\n");
 }
 
-/*Función que procesa cada carácter de la palabra
+/*Función que proesa cada carácter de la palabra
  * muestra el cracter, sus 8 bits y la señal electrica 
  * que le corresponde a cada bit
  */
